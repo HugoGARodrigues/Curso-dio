@@ -8,6 +8,7 @@
 		<style>
 			.flex-container{
 				display: flex;
+				flex-direction: column;
 				height: 150px;
 				border: 2px solid black;
 				max-width: 300px;
@@ -41,6 +42,10 @@
 				background-color: orange;
 			}
 
+			.wrap-reverse{
+				flex-wrap: wrap-reverse;
+			}
+
 
 		</style>
 
@@ -64,6 +69,16 @@
 
 		<div>
 			<div class="flex-container wrap">
+			<div class="item green">1</div>
+			<div class="item blue">2</div>
+			<div class="item orange">3</div>
+			<div class="item green">4</div>
+		</div>
+
+		<h1>Wrap Reverse</h1>
+
+		<div>
+			<div class="flex-container wrap-reverse">
 			<div class="item green">1</div>
 			<div class="item blue">2</div>
 			<div class="item orange">3</div>
