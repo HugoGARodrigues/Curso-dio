@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fundamentos align-content</title>
+
+	<style>
+		.container{
+			height: 350px;
+			max-width:300px;
+			display: flex;
+			flex-wrap: wrap;
+			border: 2px solid black;
+		}
+
+		.item{
+			background-color: orangered;
+			padding: 0 5px;
+			margin: 5px;
+			flex: 1;
+			text-align: center;
+			color: white;
+		}
+
+		.stretch{
+			align-content: stretch;
+		}
+		.center{
+			align-content: center;
+		}
+
+		.start{
+			align-content: flex-start;
+		}
+		.flex-end{
+			align-content: flex-end;
+		}
+		.around{
+			align-content: space-around;
+		}
+		.between{
+			align-content: space-between;
+		}
+
+
+	</style>
+
+
+
+</head>
+<body>
+	<p>Stretch</p>
+	<div class="container stretch">
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+
+	</div>
+
+	<p>Center</p>
+	<div class="container center">
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printing</div>
+
+	</div>
+
+
+<p>Start</p>
+	<div class="container start">
+		<div class="item">Lorem Ipsum is simply asdasda asdas</div>
+		<div class="item">Lorem Ipsum is simply dasddsadasdas</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printin  asdas</div>
+		<div class="item">Lorem Ipsum is simply dsadaada</div>
+		<div class="item">Lorem Ipsum is simply asdasdasda </div>
+		<div class="item">Lorem Ipsum is simply asdasdasdas</div>
+		<div class="item">Lorem Ipsum is simply asdasdasd</div>
+
+	</div>
+
+	<p>end</p>
+	<div class="container flex-end">
+		<div class="item">Lorem Ipsum is simply asdasda asdas</div>
+		<div class="item">Lorem Ipsum is simply dasddsadasdas</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printin  asdas</div>
+		<div class="item">Lorem Ipsum is simply dsadaada</div>
+		<div class="item">Lorem Ipsum is simply asdasdasda </div>
+		<div class="item">Lorem Ipsum is simply asdasdasdas</div>
+		<div class="item">Lorem Ipsum is simply asdasdasd</div>
+
+	</div>
+
+	<p>around</p>
+	<div class="container around">
+		<div class="item">Lorem Ipsum is simply asdasda asdas</div>
+		<div class="item">Lorem Ipsum is simply dasddsadasdas</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printin  asdas</div>
+		<div class="item">Lorem Ipsum is simply dsadaada</div>
+		<div class="item">Lorem Ipsum is simply asdasdasda </div>
+		<div class="item">Lorem Ipsum is simply asdasdasdas</div>
+		<div class="item">Lorem Ipsum is simply asdasdasd</div>
+
+	</div>
+
+	<p>between</p>
+	<div class="container between">
+		<div class="item">Lorem Ipsum is simply asdasda asdas</div>
+		<div class="item">Lorem Ipsum is simply dasddsadasdas</div>
+		<div class="item">Lorem Ipsum is simply dummy text of the printin  asdas</div>
+		<div class="item">Lorem Ipsum is simply dsadaada</div>
+		<div class="item">Lorem Ipsum is simply asdasdasda </div>
+		<div class="item">Lorem Ipsum is simply asdasdasdas</div>
+		<div class="item">Lorem Ipsum is simply asdasdasd</div>
+
+	</div>
+
+</body>
+</html>
